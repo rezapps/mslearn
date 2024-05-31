@@ -1,0 +1,30 @@
+Post http://localhost:5220/todoitems
+content-type: application/json
+
+{
+    "Name": "Make Money",
+    "IsComplete": false
+}
+
+###
+
+
+Get http://localhost:5220/todoitems
+content-type: application/json
+
+
+###
+
+Put http://localhost:5220/todoitems/3
+content-type: application/json
+
+{
+    "Name": "Make Money",
+    "IsComplete": true
+}
+
+###
+
+
+Delete http://localhost:5220/todoitems/3
+content-type: application/json
