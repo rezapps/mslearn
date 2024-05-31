@@ -2,9 +2,10 @@ Post http://localhost:5220/todoitems
 content-type: application/json
 
 {
-    "Name": "Make Money",
-    "IsComplete": false
+	"Name": "Wake Up",
+	"IsComplete": false
 }
+
 
 ###
 
@@ -15,16 +16,16 @@ content-type: application/json
 
 ###
 
-Put http://localhost:5220/todoitems/3
+Put http://localhost:5220/todoitems/1
 content-type: application/json
 
 {
-    "Name": "Make Money",
-    "IsComplete": true
+    "Name": "Wake Up",
+    "IsComplete": false
 }
 
 ###
 
 
-Delete http://localhost:5220/todoitems/3
+Delete http://localhost:5220/todoitems/1
 content-type: application/json
