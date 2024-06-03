@@ -1,31 +1,34 @@
-Post http://localhost:5220/todoitems
+Post http://localhost:5220/api/todos
 content-type: application/json
 
 {
-	"Name": "Wake Up",
+	"Name": "Go To Work",
 	"IsComplete": false
 }
 
-
 ###
 
-
-Get http://localhost:5220/todoitems
+Get http://localhost:5220/api/todos/complete
 content-type: application/json
 
 
 ###
 
-Put http://localhost:5220/todoitems/1
+Get http://localhost:5220/api/todos
+content-type: application/json
+
+###
+
+Put http://localhost:5220/api/todos/1
 content-type: application/json
 
 {
     "Name": "Wake Up",
-    "IsComplete": false
+    "IsComplete": true
 }
 
 ###
 
 
-Delete http://localhost:5220/todoitems/1
+Delete http://localhost:5220/api/todos/1
 content-type: application/json
